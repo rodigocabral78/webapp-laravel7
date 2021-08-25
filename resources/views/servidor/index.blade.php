@@ -42,11 +42,15 @@
 			</table>
 
 			<div class="my-4">
-				@if (isset($search))
-				{{ $servidores->appends($search)->links() }}
-				@else
-				{{ $servidores->links() }}
-				@endif
+				<nav aria-label="Page navigation example">
+					<ul class="pagination justify-content-center">
+						@if (isset($search))
+						{{ $servidores->appends($search)->links() }}
+						@else
+						{{ $servidores->links() }}
+						@endif
+					</ul>
+				</nav>
 			</div>
 
 			{{-- </div> --}}
