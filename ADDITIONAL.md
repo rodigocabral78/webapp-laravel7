@@ -65,7 +65,7 @@ composer require symfony/filesystem
 ./artisan make:model -vvv --force --all -- App\\Models\\Intern
 ./artisan make:model -vvv --force --migration --seed --factory --controller --api -- App\\Models\\Intern
 ./artisan make:model -vvv --force --migration --seed --factory --controller --resource -- App\\Models\\Intern
-./artisan make:model -vvv --force --controller --resource -- Cargo
+./artisan make:model -vvv --force --controller --resource -- Models/Cargo
 ```
 
 ## Migrations & Seeders

@@ -25,9 +25,10 @@
 	</style>
 </head>
 
-<body>
+<body class="antialiased">
 	<div id="app">
 		@include('layouts.navigation')
+
 
 		<main class="py-4">
 			<div class="container-fluid">
