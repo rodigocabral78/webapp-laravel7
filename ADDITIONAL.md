@@ -13,6 +13,13 @@ cp -rfv .env.example .env
 ./artisan key:generate --verbose --ansi
 ```
 
+## Módulo de linguagem Português do Brasil
+
+```bash
+composer require lucascudo/laravel-pt-br-localization --dev
+./artisan vendor:publish --tag=laravel-pt-br-localization
+```
+
 ## Artisan
 
 ```bash
@@ -108,7 +115,7 @@ composer require kitloong/laravel-migrations-generator --dev
 ## Laravel UI
 
 ```bash
-composer require laravel/ui
+composer require laravel/ui:^2.5 --dev
 
 // Generate basic scaffolding...
 ./artisan ui bootstrap
@@ -125,16 +132,8 @@ composer require laravel/ui
 // Writing CSS & JavaScript
 npm install
 npm run dev
-npm install resolve-url-loader@^4.0.0 --save-dev --legacy-peer-deps
+npm install vue-template-compiler --save-dev --production=false
+npm audit fix --force
 npm run dev
 
-```
-
-## Laravel Breeze
-
-```bash
-composer require laravel/breeze --dev
-
-./artisan breeze:install -vvv --ansi
-npm install && npm run dev
 ```
