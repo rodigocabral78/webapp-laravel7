@@ -15,16 +15,6 @@
 				<li class="nav-item active">
 					<a class="nav-link" href="#">Home<span class="sr-only">(current)</span></a>
 				</li>
-
-				@foreach ($data as $item)
-				{{ $item->id_leftmenu }}
-				{{ $item->nome }}
-				@endforeach
-
-
-
-
-
 				<li class="nav-item">
 					<a class="nav-link" href="#">Link</a>
 				</li>
@@ -79,3 +69,22 @@
 		</div>
 	</div>
 </nav>
+
+<script>
+	/* When the user clicks on the button,
+	 * toggle between hiding and showing the dropdown content
+	 */
+function myFunction() {
+  document.getElementById("myDropdown").classList.toggle("show");
+}
+
+// Close the dropdown if the user clicks outside of it
+window.onclick = function(e) {
+  if (!e.target.matches('.dropbtn')) {
+  var myDropdown = document.getElementById("myDropdown");
+    if (myDropdown.classList.contains('show')) {
+      myDropdown.classList.remove('show');
+    }
+  }
+}
+</script>

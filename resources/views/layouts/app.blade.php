@@ -23,6 +23,8 @@
 			background-color: #1a202c;
 		}
 	</style>
+
+	@yield('css-view')
 </head>
 
 <body>
@@ -40,6 +42,7 @@
 
 	<!-- Scripts -->
 	<script src="{{ asset('js/app.js') }}" defer></script>
+	@yield('js-view')
 </body>
 
 </html>

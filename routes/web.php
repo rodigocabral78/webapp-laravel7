@@ -37,10 +37,11 @@ Route::get('/home', [$namespace . HomeController::class, 'index'])->name('home')
 Route::group([
 	// 'middleware' => 'api',
 	// 'namespace' => 'Api',
-	'prefix' => 'menus'
+	'prefix' => 'menus',
+	'as' => 'menus.',
 ], function ($router) use ($namespace) {
-	Route::get('/', [$namespace . MenuController::class, 'index'])->name('menus.index');
-	Route::get('/{id}', [$namespace . MenuController::class, 'subindex'])->name('menus.subindex');
+	Route::get('/', [$namespace . MenuController::class, 'index'])->name('index');
+	Route::get('/{id}', [$namespace . MenuController::class, 'subindex'])->name('subindex');
 });
 // Route::apiResource('menus', MenuController::class);
 
