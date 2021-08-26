@@ -15,6 +15,16 @@
 				<li class="nav-item active">
 					<a class="nav-link" href="#">Home<span class="sr-only">(current)</span></a>
 				</li>
+
+				@foreach ($data as $item)
+				{{ $item->id_leftmenu }}
+				{{ $item->nome }}
+				@endforeach
+
+
+
+
+
 				<li class="nav-item">
 					<a class="nav-link" href="#">Link</a>
 				</li>
