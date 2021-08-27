@@ -29,8 +29,8 @@
 					@foreach ($servidores as $servidor)
 					<tr>
 						<td>
-							<a href="{{ route('servidores.show', $servidor->id_servidor) }}">Ver</a> |
-							<a href="{{ route('servidores.edit', $servidor->id_servidor) }}">Editar</a>
+							<a href="{{ route('private.servidores.show', $servidor->id_servidor) }}">Ver</a> |
+							<a href="{{ route('private.servidores.edit', $servidor->id_servidor) }}">Editar</a>
 						</td>
 						<th scope="row">{{ $servidor->id_servidor }}</th>
 						<td>{{ $servidor->cpf }}</th>

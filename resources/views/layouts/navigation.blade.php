@@ -28,7 +28,7 @@
 						<a class="dropdown-item" href="#">{{ __('Cargos') }}</a>
 						<a class="dropdown-item" href="#">{{ __('Funções') }}</a>
 						<a class="dropdown-item" href="#">{{ __('Vagas') }}</a>
-						<a class="dropdown-item" href="#">{{ __('Servidor') }}</a>
+						<a class="dropdown-item" href="{{ route('private.servidores.index') }}">{{ __('Servidor') }}</a>
 						<a class="dropdown-item" href="#">{{ __('Cargo / Simbologia') }}</a>
 						<a class="dropdown-item" href="#">{{ __('Migração Órgão / Servidor') }}</a>
 						<a class="dropdown-item" href="#">{{ __('Lotação') }}</a>
